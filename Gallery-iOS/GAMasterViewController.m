@@ -8,10 +8,10 @@
 
 #import "GAMasterViewController.h"
 
-#import "GADetailViewController.h"
+#import "GAVehicleCollectionViewController.h"
 
 @interface GAMasterViewController () {
-    NSMutableArray *_objects;
+    NSMutableArray *manufacturers;
 }
 @end
 
@@ -32,23 +32,37 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;*/
-    self.detailViewController = (GADetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    manufacturers = [[NSMutableArray alloc] initWithObjects:@"Audi", @"audi-gallery", @"", @"",
+                     //@"Mercedes-Benz", @"benz-gallery", @"", @"",
+                     @"BMW", @"bmw-gallery", @"", @"",
+                     @"Ford", @"ford-gallery", @"", @"",
+                     @"GM", @"gm-gallery", @"", @"",
+                     @"Honda", @"honda-gallery", @"", @"",
+                     @"Jaguar", @"jaguar-gallery", @"", @"",
+                     //@"Lexus", @"lexus-gallery", @"", @"",
+                     @"Maserati", @"maserati-gallery", @"", @"",
+                     @"Mazda", @"mazda-gallery", @"", @"",
+                     @"Porsche", @"porsche-gallery", @"", @"",
+                     @"Toyota", @"toyota-gallery", @"", @"",
+                     nil];
+    
+    self.detailViewController = (GAVehicleCollectionViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
+
+/*
+ -(void)viewDidAppear:(BOOL)animated
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [super.tableView selectRowAtIndexPath:indexPath
+                           animated:NO
+                     scrollPosition:UITableViewScrollPositionMiddle];
+}
+ */
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table View
@@ -60,14 +74,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return manufacturers.count/4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
+    NSDate *object = manufacturers[indexPath.row*4];
     cell.textLabel.text = [object description];
     return cell;
 }
@@ -81,33 +95,18 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        [manufacturers removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = _objects[indexPath.row];
-    self.detailViewController.detailItem = object;
+    NSString *object = manufacturers[indexPath.row*4+1];
+    [self.detailViewController setVehiclesJSONFile:object];
+    [self.detailViewController.collectionView reloadData];
 }
 
 @end

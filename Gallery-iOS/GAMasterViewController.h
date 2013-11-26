@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class GADetailViewController;
+@class GAVehicleCollectionViewController;
 
 @interface GAMasterViewController : UITableViewController
 
-@property (strong, nonatomic) GADetailViewController *detailViewController;
+@property (strong, nonatomic) GAVehicleCollectionViewController *detailViewController;
 
 @end
