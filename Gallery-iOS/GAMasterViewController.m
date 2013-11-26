@@ -39,6 +39,7 @@
                      @"GM", @"gm-gallery", @"", @"",
                      @"Honda", @"honda-gallery", @"", @"",
                      @"Jaguar", @"jaguar-gallery", @"", @"",
+                     @"Lamborghini", @"lamborghini-gallery", @"", @"",
                      //@"Lexus", @"lexus-gallery", @"", @"",
                      @"Maserati", @"maserati-gallery", @"", @"",
                      @"Mazda", @"mazda-gallery", @"", @"",

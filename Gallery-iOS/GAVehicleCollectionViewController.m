@@ -83,7 +83,8 @@
     
     UILabel *vehicleNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 120, 170, 30)];
     NSDictionary *vehicleData = [[self filterCollection] objectAtIndex:indexPath.row];
-    vehicleNameLabel.text = [vehicleData valueForKey:@"name"];
+    vehicleNameLabel.text = [[vehicleData valueForKey:@"name"]
+                             stringByAppendingString:[NSString stringWithFormat:@"(%d)", [[vehicleData valueForKey:@"images"] count]+[[vehicleData valueForKey:@"interiorImages"] count]+[[vehicleData valueForKey:@"exteriorImages"] count]]];
     [cell.contentView addSubview: vehicleNameLabel];
     
     UIImageView *vehicleImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 180, 120)];

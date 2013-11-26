@@ -15,13 +15,30 @@
 		0159CCE01844072100087BDE /* GAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0159CCDF1844072100087BDE /* GAAppDelegate.m */; };
 		0159CCE31844072100087BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0159CCE11844072100087BDE /* Main.storyboard */; };
 		0159CCE61844072100087BDE /* GAMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0159CCE51844072100087BDE /* GAMasterViewController.m */; };
-		0159CCE91844072100087BDE /* GADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0159CCE81844072100087BDE /* GADetailViewController.m */; };
 		0159CCEB1844072100087BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0159CCEA1844072100087BDE /* Images.xcassets */; };
 		0159CCF21844072100087BDE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0159CCF11844072100087BDE /* XCTest.framework */; };
 		0159CCF31844072100087BDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0159CCCF1844072100087BDE /* Foundation.framework */; };
 		0159CCF41844072100087BDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0159CCD31844072100087BDE /* UIKit.framework */; };
 		0159CCFC1844072100087BDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0159CCFA1844072100087BDE /* InfoPlist.strings */; };
 		0159CCFE1844072100087BDE /* Gallery_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0159CCFD1844072100087BDE /* Gallery_iOSTests.m */; };
+		01F1BEFB18440C2A00BF97D6 /* audi-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEEE18440C2A00BF97D6 /* audi-gallery.json */; };
+		01F1BEFC18440C2A00BF97D6 /* benz-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEEF18440C2A00BF97D6 /* benz-gallery.json */; };
+		01F1BEFD18440C2A00BF97D6 /* bmw-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF018440C2A00BF97D6 /* bmw-gallery.json */; };
+		01F1BEFE18440C2A00BF97D6 /* ford-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF118440C2A00BF97D6 /* ford-gallery.json */; };
+		01F1BEFF18440C2A00BF97D6 /* gm-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF218440C2A00BF97D6 /* gm-gallery.json */; };
+		01F1BF0018440C2A00BF97D6 /* holden-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF318440C2A00BF97D6 /* holden-gallery.json */; };
+		01F1BF0118440C2A00BF97D6 /* honda-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF418440C2A00BF97D6 /* honda-gallery.json */; };
+		01F1BF0218440C2A00BF97D6 /* jaguar-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF518440C2A00BF97D6 /* jaguar-gallery.json */; };
+		01F1BF0318440C2A00BF97D6 /* lexus-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF618440C2A00BF97D6 /* lexus-gallery.json */; };
+		01F1BF0418440C2A00BF97D6 /* maserati-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF718440C2A00BF97D6 /* maserati-gallery.json */; };
+		01F1BF0518440C2A00BF97D6 /* mazda-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF818440C2A00BF97D6 /* mazda-gallery.json */; };
+		01F1BF0618440C2A00BF97D6 /* porsche-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEF918440C2A00BF97D6 /* porsche-gallery.json */; };
+		01F1BF0718440C2A00BF97D6 /* toyota-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BEFA18440C2A00BF97D6 /* toyota-gallery.json */; };
+		01F1BF10184440D100BF97D6 /* GAVehicleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F1BF0F184440D100BF97D6 /* GAVehicleCollectionViewController.m */; };
+		01F1BF17184456C000BF97D6 /* GAGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F1BF15184456C000BF97D6 /* GAGalleryViewController.m */; };
+		01F1BF18184456C000BF97D6 /* GAGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BF16184456C000BF97D6 /* GAGalleryViewController.xib */; };
+		01F1BF1E1844967B00BF97D6 /* lamborghini-gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F1BF1D1844967B00BF97D6 /* lamborghini-gallery.json */; };
+		CE47CA1F03E84B4B9486595A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2C19FD92BA4302A33B988D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +65,33 @@
 		0159CCE21844072100087BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0159CCE41844072100087BDE /* GAMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAMasterViewController.h; sourceTree = "<group>"; };
 		0159CCE51844072100087BDE /* GAMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAMasterViewController.m; sourceTree = "<group>"; };
-		0159CCE71844072100087BDE /* GADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADetailViewController.h; sourceTree = "<group>"; };
-		0159CCE81844072100087BDE /* GADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADetailViewController.m; sourceTree = "<group>"; };
 		0159CCEA1844072100087BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0159CCF01844072100087BDE /* Gallery-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gallery-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0159CCF11844072100087BDE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0159CCF91844072100087BDE /* Gallery-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gallery-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		0159CCFB1844072100087BDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0159CCFD1844072100087BDE /* Gallery_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gallery_iOSTests.m; sourceTree = "<group>"; };
+		01F1BEEE18440C2A00BF97D6 /* audi-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "audi-gallery.json"; sourceTree = "<group>"; };
+		01F1BEEF18440C2A00BF97D6 /* benz-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "benz-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF018440C2A00BF97D6 /* bmw-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bmw-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF118440C2A00BF97D6 /* ford-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ford-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF218440C2A00BF97D6 /* gm-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gm-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF318440C2A00BF97D6 /* holden-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "holden-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF418440C2A00BF97D6 /* honda-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "honda-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF518440C2A00BF97D6 /* jaguar-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "jaguar-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF618440C2A00BF97D6 /* lexus-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lexus-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF718440C2A00BF97D6 /* maserati-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "maserati-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF818440C2A00BF97D6 /* mazda-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mazda-gallery.json"; sourceTree = "<group>"; };
+		01F1BEF918440C2A00BF97D6 /* porsche-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "porsche-gallery.json"; sourceTree = "<group>"; };
+		01F1BEFA18440C2A00BF97D6 /* toyota-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "toyota-gallery.json"; sourceTree = "<group>"; };
+		01F1BF0E184440D100BF97D6 /* GAVehicleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAVehicleCollectionViewController.h; sourceTree = "<group>"; };
+		01F1BF0F184440D100BF97D6 /* GAVehicleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAVehicleCollectionViewController.m; sourceTree = "<group>"; };
+		01F1BF14184456C000BF97D6 /* GAGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAGalleryViewController.h; sourceTree = "<group>"; };
+		01F1BF15184456C000BF97D6 /* GAGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAGalleryViewController.m; sourceTree = "<group>"; };
+		01F1BF16184456C000BF97D6 /* GAGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAGalleryViewController.xib; sourceTree = "<group>"; };
+		01F1BF1D1844967B00BF97D6 /* lamborghini-gallery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lamborghini-gallery.json"; sourceTree = "<group>"; };
+		39BBC0100DB5489391A68E0B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DC2C19FD92BA4302A33B988D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +102,7 @@
 				0159CCD21844072100087BDE /* CoreGraphics.framework in Frameworks */,
 				0159CCD41844072100087BDE /* UIKit.framework in Frameworks */,
 				0159CCD01844072100087BDE /* Foundation.framework in Frameworks */,
+				CE47CA1F03E84B4B9486595A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +126,7 @@
 				0159CCF71844072100087BDE /* Gallery-iOSTests */,
 				0159CCCE1844072000087BDE /* Frameworks */,
 				0159CCCD1844072000087BDE /* Products */,
+				39BBC0100DB5489391A68E0B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +146,7 @@
 				0159CCD11844072100087BDE /* CoreGraphics.framework */,
 				0159CCD31844072100087BDE /* UIKit.framework */,
 				0159CCF11844072100087BDE /* XCTest.framework */,
+				DC2C19FD92BA4302A33B988D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,13 +154,30 @@
 		0159CCD51844072100087BDE /* Gallery-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				01F1BEEE18440C2A00BF97D6 /* audi-gallery.json */,
+				01F1BEEF18440C2A00BF97D6 /* benz-gallery.json */,
+				01F1BEF018440C2A00BF97D6 /* bmw-gallery.json */,
+				01F1BEF118440C2A00BF97D6 /* ford-gallery.json */,
+				01F1BEF218440C2A00BF97D6 /* gm-gallery.json */,
+				01F1BEF318440C2A00BF97D6 /* holden-gallery.json */,
+				01F1BEF418440C2A00BF97D6 /* honda-gallery.json */,
+				01F1BEF518440C2A00BF97D6 /* jaguar-gallery.json */,
+				01F1BF1D1844967B00BF97D6 /* lamborghini-gallery.json */,
+				01F1BEF618440C2A00BF97D6 /* lexus-gallery.json */,
+				01F1BEF718440C2A00BF97D6 /* maserati-gallery.json */,
+				01F1BEF818440C2A00BF97D6 /* mazda-gallery.json */,
+				01F1BEF918440C2A00BF97D6 /* porsche-gallery.json */,
+				01F1BEFA18440C2A00BF97D6 /* toyota-gallery.json */,
 				0159CCDE1844072100087BDE /* GAAppDelegate.h */,
 				0159CCDF1844072100087BDE /* GAAppDelegate.m */,
 				0159CCE11844072100087BDE /* Main.storyboard */,
 				0159CCE41844072100087BDE /* GAMasterViewController.h */,
 				0159CCE51844072100087BDE /* GAMasterViewController.m */,
-				0159CCE71844072100087BDE /* GADetailViewController.h */,
-				0159CCE81844072100087BDE /* GADetailViewController.m */,
+				01F1BF0E184440D100BF97D6 /* GAVehicleCollectionViewController.h */,
+				01F1BF0F184440D100BF97D6 /* GAVehicleCollectionViewController.m */,
+				01F1BF14184456C000BF97D6 /* GAGalleryViewController.h */,
+				01F1BF15184456C000BF97D6 /* GAGalleryViewController.m */,
+				01F1BF16184456C000BF97D6 /* GAGalleryViewController.xib */,
 				0159CCEA1844072100087BDE /* Images.xcassets */,
 				0159CCD61844072100087BDE /* Supporting Files */,
 			);
@@ -164,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0159CD011844072100087BDE /* Build configuration list for PBXNativeTarget "Gallery-iOS" */;
 			buildPhases = (
+				0A9E0A9DD81044FBA37510CD /* Check Pods Manifest.lock */,
 				0159CCC81844072000087BDE /* Sources */,
 				0159CCC91844072000087BDE /* Frameworks */,
 				0159CCCA1844072000087BDE /* Resources */,
+				E5239A42AA2740F08BB533E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,9 +292,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F1BF0018440C2A00BF97D6 /* holden-gallery.json in Resources */,
+				01F1BEFF18440C2A00BF97D6 /* gm-gallery.json in Resources */,
+				01F1BEFE18440C2A00BF97D6 /* ford-gallery.json in Resources */,
 				0159CCEB1844072100087BDE /* Images.xcassets in Resources */,
+				01F1BF0518440C2A00BF97D6 /* mazda-gallery.json in Resources */,
+				01F1BF0318440C2A00BF97D6 /* lexus-gallery.json in Resources */,
+				01F1BF0418440C2A00BF97D6 /* maserati-gallery.json in Resources */,
+				01F1BF18184456C000BF97D6 /* GAGalleryViewController.xib in Resources */,
+				01F1BEFC18440C2A00BF97D6 /* benz-gallery.json in Resources */,
+				01F1BF0718440C2A00BF97D6 /* toyota-gallery.json in Resources */,
+				01F1BEFB18440C2A00BF97D6 /* audi-gallery.json in Resources */,
 				0159CCDA1844072100087BDE /* InfoPlist.strings in Resources */,
+				01F1BF0118440C2A00BF97D6 /* honda-gallery.json in Resources */,
 				0159CCE31844072100087BDE /* Main.storyboard in Resources */,
+				01F1BF0218440C2A00BF97D6 /* jaguar-gallery.json in Resources */,
+				01F1BF0618440C2A00BF97D6 /* porsche-gallery.json in Resources */,
+				01F1BEFD18440C2A00BF97D6 /* bmw-gallery.json in Resources */,
+				01F1BF1E1844967B00BF97D6 /* lamborghini-gallery.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,13 +323,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A9E0A9DD81044FBA37510CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5239A42AA2740F08BB533E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0159CCC81844072000087BDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F1BF17184456C000BF97D6 /* GAGalleryViewController.m in Sources */,
 				0159CCE61844072100087BDE /* GAMasterViewController.m in Sources */,
-				0159CCE91844072100087BDE /* GADetailViewController.m in Sources */,
+				01F1BF10184440D100BF97D6 /* GAVehicleCollectionViewController.m in Sources */,
 				0159CCE01844072100087BDE /* GAAppDelegate.m in Sources */,
 				0159CCDC1844072100087BDE /* main.m in Sources */,
 			);
@@ -384,6 +491,7 @@
 		};
 		0159CD021844072100087BDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39BBC0100DB5489391A68E0B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -397,6 +505,7 @@
 		};
 		0159CD031844072100087BDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39BBC0100DB5489391A68E0B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -469,6 +578,7 @@
 				0159CD031844072100087BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0159CD041844072100087BDE /* Build configuration list for PBXNativeTarget "Gallery-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +587,7 @@
 				0159CD061844072100087BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
