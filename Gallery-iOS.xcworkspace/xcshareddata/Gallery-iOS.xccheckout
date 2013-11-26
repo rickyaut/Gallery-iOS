@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CDFCD686-0719-4EA3-B4CD-C8D928943ACC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Gallery-iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C7DF8202-DF0D-4209-A839-442CEBD672CA</key>
+		<string>https://github.com/rickyaut/Gallery-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gallery-iOS.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C7DF8202-DF0D-4209-A839-442CEBD672CA</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rickyaut/Gallery-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C7DF8202-DF0D-4209-A839-442CEBD672CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C7DF8202-DF0D-4209-A839-442CEBD672CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Gallery-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
